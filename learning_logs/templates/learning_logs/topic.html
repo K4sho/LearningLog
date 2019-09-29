@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TOPIC</title>
+    {% extends "learning_logs/base.html" %}
+
+    {% block content %}
+
+    <p>Тема: {{ topic }}</p>
+
+    <p>Записи:</p>
+    <p>
+        <a href="{% url 'new_entry' topic.id %}">добавить новую запись</a>
+    </p>
+    <ul>
+        {% for entry in entries %}
+        <li>
+            <p>{{ entry.date_added|date:'M d, Y H:i' }}</p>
+            <p>{{ entry.text|linebreaks }}</p>
+            <p>
+                <a href="{% url 'edit_entry' entry.id %}">изменить запись</a>
+            </p>
+        </li>
+        {% empty %}
+        <li>
+            Пока еще нет ни одной записи
+        </li>
+        {% endfor %}
+    </ul>
+
+    {% endblock content %}
+</head>
+<body>
+
+</body>
+</html>
