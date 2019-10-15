@@ -11,7 +11,7 @@
 
     <p>Записи:</p>
     <p>
-        <a href="{% url 'new_entry' topic.id %}">добавить новую запись</a>
+        <a href="{% url 'learning_logs:new_entry' topic.id %}">добавить новую запись</a>
     </p>
     <ul>
         {% for entry in entries %}
@@ -19,7 +19,7 @@
             <p>{{ entry.date_added|date:'M d, Y H:i' }}</p>
             <p>{{ entry.text|linebreaks }}</p>
             <p>
-                <a href="{% url 'edit_entry' entry.id %}">изменить запись</a>
+                <a href="{% url 'learning_logs:edit_entry' entry.id %}">изменить запись</a>
             </p>
         </li>
         {% empty %}
