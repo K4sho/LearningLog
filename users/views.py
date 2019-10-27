@@ -15,9 +15,12 @@ def logout_view(request):
 
 
 def register(request):
+    """Регистрирует нового пользователя."""
     if request.method != 'POST':
+        # Показываем пустую форму регистрации
         form = UserCreationForm()
     else:
+        # Обработка заполненной формы
         form = UserCreationForm(data=request.POST)
 
         if form.is_valid():
