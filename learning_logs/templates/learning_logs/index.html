@@ -1,17 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>LEARNING LOG</title>
-    {% extends "learning_logs/base.html" %}
+{% extends "learning_logs/base.html" %}
 
-    {% block content %}
-    <p>
-        Learning Log - это приложение, которое поможет тебе вести свой дневник изученного материала
-    </p>
-    {% endblock content %}
-</head>
-<body>
+{% block header %}
+  <div class='jumbotron'>
+      <h1>Отслеживайте своё изучение!</h1>
+  </div>
+{% endblock header %}
 
-</body>
-</html>
+{% block content %}
+  <h2>
+      <a class="nav-item" href="{% url 'users:register' %}">Зарегистрировать аккаунт</a> для создания
+      собственного журнала обучения и списка тем, которые вы изучаете.
+  </h2>
+    -
+  <h2>
+      Каждый раз, когда вы узнаете что-то новое для себя, сделайте запись,
+      подведя итог того, что вы изучили
+  </h2>
+{% endblock content %}

@@ -35,6 +35,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # Сторонние приложения
+    'bootstrap4',
+    # Мои приложения
     'learning_logs',
     'users',
 ]

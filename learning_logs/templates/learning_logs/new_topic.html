@@ -1,22 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>NEW TOPIC</title>
-    {% extends "learning_logs/base.html" %}
+{% extends "learning_logs/base.html" %}
+{% load bootstrap4 %}
 
-    {% block content %}
+{% block header %}
+  <h2>Добавить новую тему:</h2>
+{% endblock header %}
 
-    <p>Добавить новую тему:</p>
-    <form action="{% url 'learning_logs:new_topic' %}" method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button name="submit">добавить тему</button>
-    </form>
+{% block content %}
 
-    {% endblock content %}
-</head>
-<body>
+  <form action="{% url 'learning_logs:new_topic' %}" method="post" class="form">
+      {% csrf_token %}
+      {% bootstrap_form form %}
 
-</body>
-</html>
+      {% buttons %}
+        <button name="submit" class="btn btn-primary">Добавить тему</button>
+      {% endbuttons %}
+  </form>
+
+{% endblock content %}
