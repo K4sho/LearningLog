@@ -1,0 +1,58 @@
+@import url(‘https://fonts.googleapis.com/css?family=Raleway');
+
+html,h1,h2,h3,h4,h5,h6,a{
+ font-family: "Raleway";
+}
+
+.contact-form{
+ margin: 6em 0;
+ position: relative;
+}.contact-form h1{
+ padding:2em 1px;
+ color: #F97300;
+}
+.contact-form .right{
+ max-width: 600px;
+}
+.contact-form .right .btn-secondary{
+ background:  #F97300;
+ color: #fff;
+ border:0;
+}
+.contact-form .right .form-control::placeholder{
+ color: #888;
+ font-size: 16px;
+}
+
+.navbar{
+background:#F97300;
+}
+
+.nav-link , .navbar-brand{
+color: #f4f4f4;
+cursor: pointer;
+}
+
+.nav-link{ margin-right: 1em !important;}
+.nav-link:hover{ background: #f4f4f4; color: #f97300; }
+.navbar-collapse{ justify-content: flex-end;}
+.navbar-toggler{  background:#fff !important;}
+
+.navbar-collapse{
+ justify-content: flex-end;
+}
+
+.bg-dark{
+background-color:#343a40!important
+}
+.bg-primary{
+background-color:#007bff!important
+}
+
+/*Стиль хедера*/
+.header{
+ background-image: url('../images/headerback.jpg');
+ background-attachment: fixed;
+ background-size: cover;
+ background-position: center;
+}
