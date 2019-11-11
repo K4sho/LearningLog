@@ -1,17 +1,18 @@
 {% extends "learning_logs/base.html" %}
 {% load bootstrap4 %}
+{% load static %}
 
 {% block header %}
-  <h1>Темы</h1>
+  <h1 class="theme-text">Темы</h1>
 {% endblock header %}
 
 {% block content %}
 
-<ul>
+<ul class="list-rectangle">
     {% for topic in topics %}
     <li>
         <h3>
-            <a href="{% url 'learning_logs:topic' topic.id %}">{{ topic }}</a>
+            <a href="{% url 'learning_logs:topic' topic.id %}" style="color:#000000" >{{ topic }}</a>
         </h3>
     </li>
     {% empty %}
@@ -20,7 +21,7 @@
 </ul>
 
 <h3>
-    <a href="{% url 'learning_logs:new_topic' %}">Добавить новую тему</a>
+    <a href="{% url 'learning_logs:new_topic' %}" style="color:#000000">Добавить новую тему</a>
 </h3>
 
 {% endblock content %}

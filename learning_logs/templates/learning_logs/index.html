@@ -1,17 +1,17 @@
 {% extends "learning_logs/base.html" %}
-
+{% load static %}
 {% block header %}
   <div class='jumbotron'>
-      <h1>Отслеживайте своё изучение!</h1>
+      <h1 class="header-text" align="center">Отслеживайте своё изучение!</h1>
   </div>
 {% endblock header %}
 
 {% block content %}
   <h2>
-      <a class="nav-item" href="{% url 'users:register' %}">Зарегистрировать аккаунт</a> для создания
+      <a class="nav-item" href="{% url 'users:register' %}" style="color:#F5DEB3">Зарегистрировать аккаунт</a> для создания
       собственного журнала обучения и списка тем, которые вы изучаете.
   </h2>
-    -
+  <hr>
   <h2>
       Каждый раз, когда вы узнаете что-то новое для себя, сделайте запись,
       подведя итог того, что вы изучили

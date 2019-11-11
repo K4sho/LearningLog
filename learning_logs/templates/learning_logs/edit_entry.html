@@ -7,14 +7,14 @@
 
     {% block content %}
 
-    <p><a href="{% url 'learning_logs:topic' topic.id %}">{{ topic }}</a></p>
+    <p><a href="{% url 'learning_logs:topic' topic.id %}" style="color:#000000">{{ topic }}</a></p>
 
     <p>Редактировать запись:</p>
 
     <form action="{% url 'learning_logs:edit_entry' entry.id %}" method="post">
         {% csrf_token %}
         {{ form.as_p }}
-        <button name="submit">сохранить изменения</button>
+        <button name="submit" class="btn btn-dark">сохранить изменения</button>
     </form>
 
     {% endblock content %}

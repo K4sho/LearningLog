@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e1372d8-101e-477c-bfd7-18d6ff24d307" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/learning_logs/static/learning_logs/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_logs/static/learning_logs/images/headerback.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning_log/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_log/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning_logs/templates/learning_logs/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/learning_logs/templates/learning_logs/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_logs/static/learning_logs/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/learning_logs/static/learning_logs/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_logs/templates/learning_logs/edit_entry.html" beforeDir="false" afterPath="$PROJECT_DIR$/learning_logs/templates/learning_logs/edit_entry.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_logs/templates/learning_logs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/learning_logs/templates/learning_logs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_logs/templates/learning_logs/new_topic.html" beforeDir="false" afterPath="$PROJECT_DIR$/learning_logs/templates/learning_logs/new_topic.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learning_logs/templates/learning_logs/topic.html" beforeDir="false" afterPath="$PROJECT_DIR$/learning_logs/templates/learning_logs/topic.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learning_logs/templates/learning_logs/topics.html" beforeDir="false" afterPath="$PROJECT_DIR$/learning_logs/templates/learning_logs/topics.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning_logs/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_logs/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/templates/users/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/users/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/templates/users/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/users/register.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
