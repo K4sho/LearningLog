@@ -122,3 +122,23 @@ STATIC_URL = '/static/'
 # Когда пользователь не прошедший проверку запрашивает страницу, защищенную декоратором @login_required,
 # Django отправляет его на этот url адрес
 LOGIN_URL = '/users/login/'
+
+# Heroku's settings
+if os.getcwd() == '/app':
+    import dj_database_url
+    DATABASES = {
+        'default': dj_database_url.config(default='postgres://localhost')
+    }
+
+    # Поддержка заголовка 'X-Forwarded-Proto' для request.is_secure()
+    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+    # Разрешены все заголовки постов
+    ALLOWED_HOSTS = ['*']
+
+    # Конфигурация статических ресурсов
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    STATIC_ROOT = 'staticfiles'
+    STATICFILES_DIRS = (
+        os.path.join(BASE_DIR, 'static')
+    )
