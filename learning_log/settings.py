@@ -135,6 +135,6 @@ django_heroku.settings(locals())
 
 cwd = os.getcwd()
 if cwd == '/app' or cwd[:4] == '/tmp':
-    DEBUG = False
-
     ALLOWED_HOSTS = ['lelog-app.herokuapp.com']
+
+    DEBUG = False
