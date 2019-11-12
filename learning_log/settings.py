@@ -25,7 +25,7 @@ SECRET_KEY = 'xsx!79)km1r$=f3j&@qj_i*a#0dpm8)n$)2et3ycs8tlyueww2'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -135,6 +135,7 @@ django_heroku.settings(locals())
 
 cwd = os.getcwd()
 if cwd == '/app' or cwd[:4] == '/tmp':
-    ALLOWED_HOSTS = ['lelog-app.herokuapp.com']
+    # Honor the 'X-Forwarded-Proto' header for request.is_secure().
+    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
-    DEBUG = False
+    ALLOWED_HOSTS = ['lelog-app.herokuapp.com']
