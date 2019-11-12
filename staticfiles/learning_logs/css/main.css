@@ -1,0 +1,92 @@
+@import url(‘https://fonts.googleapis.com/css?family=Raleway');
+
+html,h1,h2,h3,h4,h5,h6,a{
+ font-family: "Raleway", "cursive";
+ font-style: italic;
+}
+
+.navbar{
+    background:#F97300;
+}
+
+.nav-link{ margin-right: 1em !important;}
+.nav-link:hover{ background: #f4f4f4; color: #f97300; }
+.navbar-collapse{ justify-content: flex-end;}
+.navbar-toggler{  background:#fff !important;}
+
+.navbar-collapse{
+ justify-content: flex-end;
+}
+
+.bg-dark{
+background-color:#343a40!important
+}
+.bg-primary{
+background-color:#007bff!important
+}
+
+/*Стиль хедера*/
+.header{
+ background-image: url('../images/headerback.jpg');
+ background-attachment: fixed;
+ background-size: cover;
+ background-position: center;
+}
+
+.page-header{
+    color: #999;
+}
+
+.card-text {
+  background: #F5DEB3
+}
+
+.header-text{
+    font-weight: 700;
+}
+
+.theme-text{
+    color: #000;
+}
+
+.jumbotron{
+    background: #343a40!important;
+    opacity: 0.25;
+}
+
+<style>
+
+.list-rectangle {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.list-rectangle>li {
+  position: relative;
+  display: block;
+  margin-bottom: .25rem;
+  padding: .325rem .825rem .325rem 1.325rem;
+  color: #fff;
+  background: #F5DEB3;
+}
+.list-rectangle>li:last-child {
+  margin-bottom: 0;
+}
+.list-rectangle>li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0.5rem;
+  background: rgba(245, 124, 0, .75);
+}
+</style>
+
+<ul class="list-rectangle">
+  <li>Lorem ipsum dolor sit amet</li>
+  <li>Consectetur adipiscing elit</li>
+  <li>Integer molestie lorem at massa</li>
+  <li>Facilisis in pretium nisl aliquet</li>
+  <li>Nulla volutpat aliquam velit</li>
+</ul>
