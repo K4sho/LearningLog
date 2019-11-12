@@ -133,12 +133,20 @@ if os.getcwd() == '/app':
     # Поддержка заголовка 'X-Forwarded-Proto' для request.is_secure()
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
+    STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
     # Разрешены все заголовки постов
     ALLOWED_HOSTS = ['*']
 
     # Конфигурация статических ресурсов
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
     STATIC_ROOT = 'staticfiles'
+    STATIC_TMP = os.path.join(BASE_DIR, 'static')
+
+    os.makedirs(STATIC_TMP, exist_ok=True)
+    os.makedirs(STATIC_ROOT, exist_ok=True)
+
     STATICFILES_DIRS = (
         os.path.join(BASE_DIR, 'static')
     )
