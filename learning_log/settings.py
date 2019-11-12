@@ -147,6 +147,9 @@ if os.getcwd() == '/app':
 
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
+    # Разрешены все заголовки постов
+    ALLOWED_HOSTS = ['*']
+
     # Конфигурация статических ресурсов
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
