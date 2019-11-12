@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e1372d8-101e-477c-bfd7-18d6ff24d307" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/placeholder.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learning_log/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_log/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_log/static/placeholder.txt" beforeDir="false" afterPath="$PROJECT_DIR$/static/placeholder.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,11 +36,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/learning_logs/static/learning_logs" />
       <recent name="$PROJECT_DIR$/learning_logs/images" />
       <recent name="$PROJECT_DIR$/learning_logs/static/css" />
       <recent name="$PROJECT_DIR$/learning_logs/static" />
-      <recent name="$PROJECT_DIR$/learning_logs/templates/learning_logs/css" />
     </key>
   </component>
   <component name="RunDashboard">
