@@ -140,6 +140,11 @@ if os.getcwd() == '/app':
     # Поддержка заголовка 'X-Forwarded-Proto' для request.is_secure()
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
+    # Хостом проекта может быть только heroku
+    ALLOWED_HOSTS = ['lelog-app.herokuapp.com']
+
+    DEBUG = False
+
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
     # Разрешены все заголовки постов
