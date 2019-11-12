@@ -25,7 +25,7 @@ SECRET_KEY = 'xsx!79)km1r$=f3j&@qj_i*a#0dpm8)n$)2et3ycs8tlyueww2'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost']
 
 # Application definition
 
@@ -58,7 +58,7 @@ ROOT_URLCONF = 'learning_log.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'learning_log/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -132,3 +132,9 @@ STATICFILES_DIRS = (
 LOGIN_URL = '/users/login/'
 
 django_heroku.settings(locals())
+
+cwd = os.getcwd()
+if cwd == '/app' or cwd[:4] == '/tmp':
+    DEBUG = False
+
+    ALLOWED_HOSTS = ['lelog-app.herokuapp.com']
