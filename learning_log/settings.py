@@ -119,6 +119,9 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
+# Extra places for collectstatic to find static files.
+STATICFILES_DIRS = [os.path.join(BASE_DIR,'static')]
+
 # Мои настройки
 # Когда пользователь не прошедший проверку запрашивает страницу, защищенную декоратором @login_required,
 # Django отправляет его на этот url адрес
@@ -149,6 +152,5 @@ if os.getcwd() == '/app':
     os.makedirs(STATIC_TMP, exist_ok=True)
     os.makedirs(STATIC_ROOT, exist_ok=True)
 
-    STATICFILES_DIRS = (
-        os.path.join(BASE_DIR, 'static')
-    )
+    # Extra places for collectstatic to find static files.
+    STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
